@@ -33,7 +33,7 @@
       echo "<center><h3>Enter your information here:</h3></center>"; 
     ?>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <!-- form to get the base and height from the user -->
+    <!-- form to get the name and age from the user -->
     <form action="./results.php" method="post" target="results">
       <!-- Name field -->
       <label for="lblName">Name:</label>
@@ -102,7 +102,7 @@
       </tbody>
     </table>
     </form></center>
-    <!-- Description of an octahedron -->
+    <!-- Text about the subject -->
     <?php 
       echo "<center><h3>Why is our age different on other planets?</h3></center>";
     ?>
@@ -113,6 +113,61 @@
       echo "<center><h3>Watch this video to see the planets in our Solar System orbiting the Sun ↓</h3></center>";
     ?>
     <br></br>
+    <!-- Video -->
     <iframe width="560" height="315" src="https://www.youtube.com/embed/z8aBZZnv6y8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <?php
+     echo "<center><h3>Here is a list in order of the planet where you will be the oldest to the planet where you will be the youngest</h3></center>"
+    ?>
+    <!-- Simple list -->
+    <style>
+    .demo-list-item {
+      width: 300px;
+    }
+    </style>
+
+    <ul class="demo-list-item mdl-list">
+      <li class="mdl-list__item">
+        <span class="mdl-list__item-primary-content">
+          Mercury
+        </span>
+      </li>
+      <li class="mdl-list__item">
+        <span class="mdl-list__item-primary-content">
+          Venus
+        </span>
+      </li>
+      <li class="mdl-list__item">
+         <span class="mdl-list__item-primary-content">
+          Earth
+        </span>
+      </li>
+      <li class="mdl-list__item">
+         <span class="mdl-list__item-primary-content">
+          Mars
+        </span>
+      </li>
+      <li class="mdl-list__item">
+         <span class="mdl-list__item-primary-content">
+          Jupiter
+        </span>
+      </li>
+      <li class="mdl-list__item">
+         <span class="mdl-list__item-primary-content">
+          Saturn
+        </span>
+      </li>
+      <li class="mdl-list__item">
+         <span class="mdl-list__item-primary-content">
+          Uranus
+        </span>
+      </li>
+      <li class="mdl-list__item">
+         <span class="mdl-list__item-primary-content">
+          Neptune
+        </span>
+      </li>
+    </ul>
+    <center><img src="./images/venusmars.jpeg"></center>
+    <br><br>
   </body>
 </html>
